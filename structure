@@ -1,0 +1,46 @@
+my_app/
+│
+├── main.py                 # Entry point of the app
+├── requirements.txt        # Dependencies
+│
+├── features/                   # Core shared utilities (used across all sub-apps)
+│   ├── __init__.py
+│   ├── utils.py            # Helper functions
+│   ├── settings.py         # Configurations
+│   └── database.py         # (If we use DB)
+│
+├── apk/
+│   ├── main app            # Script to build APK using BeeWare or similar
+│   |   |
+│   │   ├── downloader/         # Our YouTube Downloader sub-app
+│   │   │   ├── __init__.py           
+│   │   │   ├── logic.py        # Core logic (yt_dlp functions, etc.)
+│   │   │   ├── gui.py          # PySide6 GUI for this sub-app
+│   │   │   └── assets/          # Icons, images for this app
+│   │   │
+│   │   ├── editor/             # Example: A text or video editor sub-app
+│   │   │   ├── __init__.py
+│   │   │   ├── logic.py
+│   │   │   ├── gui.py
+│   │   │   └── assets/
+│   │ 
+|   additional app   
+|       |
+│       └── another_app/        # Future app
+│           ├── __init__.py
+│           ├── logic.py
+│           ├── gui.py
+│           └── assets/
+| 
+│
+├── market place               
+│   ├── 
+│   └── 
+|
+├── assets/                 # Global shared images/icons/fonts
+│   ├── logo.png
+│   └── styles.qss          # Stylesheets
+│
+└── tests/                  # Unit tests for each module
+    ├── test_downloader.py
+    └── test_editor.py
