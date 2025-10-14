@@ -1,6 +1,7 @@
 🚀 Application Setup Guide
 This guide provides detailed, step-by-step instructions to install and configure the Universal File Converter Pro application on your system.
 
+
 📋 Prerequisites
 Before you begin, please ensure your system meets the following requirements:
 
@@ -83,6 +84,3 @@ After launching, check the application's header for dependency status icons:
 ✅ Green Icon: The feature is correctly configured and ready to use.
 
 ❌ Red Icon: The feature is disabled because a dependency (like FFmpeg) is missing or not found. If you see a red icon for audio conversion, please revisit Step 3.
-
-🐛 Troubleshooting
-If you encounter any issues, please refer to the Troubleshooting section in the main README.md file for common problems and their solutions.
