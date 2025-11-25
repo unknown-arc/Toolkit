@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Summarizer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-video"></i> Video Summarizer</h1>
+            <p>Upload any video file to get an AI-powered summary of its content</p>
+        </header>
+
+        <!-- Upload Area -->
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Drag & Drop Video File</h3>
+                <p>or click to browse</p>
+                <input type="file" id="videoFile" accept=".mp4,.avi,.mov,.mkv,.webm" hidden>
+                <p class="file-info" id="fileInfo"></p>
+                <div class="supported-formats">
+                    <p>Supported formats: MP4, AVI, MOV, MKV, WEBM</p>
+                    <p>Max file size: 100MB</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="settings">
+            <div class="setting-group">
+                <label for="summaryLength">Summary Length:</label>
+                <select id="summaryLength">
+                    <option value="2">2 sentences</option>
+                    <option value="3" selected>3 sentences</option>
+                    <option value="4">4 sentences</option>
+                    <option value="5">5 sentences</option>
+                </select>
+            </div>
+            <div class="setting-group">
+                <label for="useAI">
+                    <input type="checkbox" id="useAI" checked>
+                    Use AI Summarization (OpenAI)
+                </label>
+                <small class="ai-note">Uncheck to use faster extractive summarization</small>
+            </div>
+        </div>
+
+        <!-- Process Button -->
+        <button id="processBtn" class="process-btn" disabled>
+            <i class="fas fa-magic"></i> Generate Summary
+        </button>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Processing your video... This may take a few minutes.</p>
+            <div class="progress-steps">
+                <div class="step active">Extracting Audio</div>
+                <div class="step">Transcribing Speech</div>
+                <div class="step">Generating Summary</div>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="results hidden">
+            <h2><i class="fas fa-file-alt"></i> Video Summary</h2>
+            
+            <div class="result-grid">
+                <div class="result-card">
+                    <h3><i class="fas fa-chart-bar"></i> Summary</h3>
+                    <div id="summaryText" class="summary-text"></div>
+                </div>
+                
+                <div class="result-card">
+                    <h3><i class="fas fa-info-circle"></i> Video Details</h3>
+                    <div class="details">
+                        <p><strong>Duration:</strong> <span id="videoDuration"></span></p>
+                        <p><strong>Processing Time:</strong> <span id="processingTime"></span></p>
+                        <p><strong>Summary Length:</strong> <span id="wordCount"></span> words</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transcript-section">
+                <h3><i class="fas fa-scroll"></i> Full Transcript</h3>
+                <div id="transcriptText" class="transcript-text"></div>
+            </div>
+
+            <button id="newSummary" class="new-summary-btn">
+                <i class="fas fa-redo"></i> Create New Summary
+            </button>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" class="error-message hidden">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span id="errorText"></span>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
