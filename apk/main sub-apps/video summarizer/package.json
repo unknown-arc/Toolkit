@@ -1,0 +1,41 @@
+{
+  "name": "video-summarizer-app",
+  "version": "1.0.0",
+  "description": "Desktop app for summarizing videos",
+  "main": "electron/main.js",
+  "author": "Your Name",
+  "scripts": {
+    "start": "electron .",
+    "dev": "set NODE_ENV=development && electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.yourname.videosummarizer",
+    "productName": "Video Summarizer",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "main.py",
+      "video_summarizer.py",
+      "config.py",
+      "requirements.txt",
+      ".env",
+      "uploads/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
