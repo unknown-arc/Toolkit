@@ -1,0 +1,44 @@
+{
+    "climax": {
+        "main": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\ClimaX\\main.py",
+        "info": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\ClimaX\\appinfoft\\info.json",
+        "id": "climax",
+        "name": "ClimaX",
+        "icon": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\ClimaX\\appinfoft\\app_icon.svg"
+    },
+    "datacal": {
+        "main": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Video Summarizer\\main.py",
+        "info": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Video Summarizer\\appinfoft\\info.json",
+        "id": "datacal",
+        "name": "Data Calculator",
+        "icon": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Video Summarizer\\appinfoft\\app_icon.svg"
+    },
+    "passgen": {
+        "main": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Password Generator\\main.py",
+        "info": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Password Generator\\appinfoft\\info.json",
+        "id": "passgen",
+        "name": "Password Generator",
+        "icon": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Password Generator\\appinfoft\\app_icon.svg"
+    },
+    "unitconv": {
+        "main": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Unit Converter\\main.py",
+        "info": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Unit Converter\\appinfoft\\info.json",
+        "id": "unitconv",
+        "name": "Unit Converter",
+        "icon": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Unit Converter\\appinfoft\\app_icon.svg"
+    },
+    "ufc": {
+        "main": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Universal Converter\\main.py",
+        "info": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Universal Converter\\appinfoft\\info.json",
+        "id": "ufc",
+        "name": "Universal File Converter",
+        "icon": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Universal Converter\\appinfoft\\app_icon.svg"
+    },
+    "osvd": {
+        "main": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Video Downloader\\main.py",
+        "info": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Video Downloader\\appinfoft\\info.json",
+        "id": "osvd",
+        "name": "Open Source Video Downloader",
+        "icon": "Z:\\Project\\Toolkit\\subapp\\main_subapp\\Video Downloader\\appinfoft\\app_icon.svg"
+    }
+}
