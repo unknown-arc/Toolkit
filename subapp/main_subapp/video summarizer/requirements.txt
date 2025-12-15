@@ -10,3 +10,4 @@ pytube==15.0.0
 sumy==0.11.0
 nltk==3.8.1
 python-dotenv==1.0.0
+jinja2
